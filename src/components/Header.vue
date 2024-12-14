@@ -1,23 +1,17 @@
 <template>
-    <nav class="nav navbar">
-
-    <!-- Logo Section -->
-    <a href="#" class="logo">Logo</a>
-
-    <!-- Navigation Links -->
-    <ul class="navbar-list">
-      <li class="navbaritem"><a href="#" class="navbar-link">Home</a></li>
-      <li class="navbar-item"><a href="#" class="navbar-link">About Us</a></li>
-      <li class="navbar-item"><a href="#" class="navbar-link">FAQ</a></li>
-      <li class="navbar-item"><a href="#" class="navbar-link">Feedback</a></li>
+  <nav class="pure-menu pure-menu-horizontal">
+    <a href="#" class="pure-menu-heading pure-menu-link">Logo</a>
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">About Us</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">FAQ</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Feedback</a></li>
     </ul>
-
-    <!-- Search Form -->
-    <form class="navbar-form">
+    <form class="pure-form">
       <input type="text" placeholder="Search here..." />
     </form>
 
-    <!-- Profile Icon Section (Font Awesome) -->
+    <!-- Profile Icon (Font Awesome) -->
     <div class="profile-icon">
       <a href="#" class="pure-menu-link"><i class="fa fa-user-circle"></i></a>
     </div>
@@ -31,48 +25,46 @@ export default {
 </script>
 
 <style scoped>
-/* Custom Header Styles */
+/* Custom Navbar Styles */
 nav {
   background-color: #0073e6;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed; /* Navbar remains fixed at the top */
-  top: 0;
+  position: fixed; /* Make navbar fixed */
+  top: 0; /* Position it at the top of the page */
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensure navbar stays on top of other elements */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  z-index: 1000; /* Ensure it's above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow under navbar */
 }
 
-.nav-heading {
+.pure-menu-heading {
   color: white;
-  font-size: 1.5rem; /* Adjust logo size */
-  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-.navbar-link {
+.pure-menu-link {
   color: white;
-  text-decoration: none; /* Remove underline from links */
 }
 
-.navbar-link:hover {
-  color: #ffcc00; /* Highlight color on hover */
+.pure-menu-link:hover {
+  color: #ffcc00;
 }
 
-.navbar-form input[type="text"] {
+.pure-form input[type="text"] {
   border-radius: 4px;
   padding: 5px;
   margin-left: 20px; /* Space between search input and menu items */
-  border: none; /* Remove default border */
 }
 
+/* Adjust the body content to ensure the navbar does not cover it */
 body {
-  margin-top: 60px; /* Adjust body content to ensure it doesn't overlap with navbar */
+  margin-top: 60px; /* Space for the fixed navbar */
 }
 
-/* Profile Icon Styling */
+/* Profile Icon Styles */
 .profile-icon {
   display: flex;
   align-items: center;
@@ -81,7 +73,7 @@ body {
 }
 
 .profile-icon i {
-  font-size: 1.8rem; /* Icon size */
+  font-size: 1.8rem; /* Adjust size */
   color: white;
 }
 </style>
