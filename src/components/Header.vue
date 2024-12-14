@@ -1,18 +1,19 @@
 <template>
-  <nav class="pure-menu pure-menu-horizontal">
+    <nav class="nav navbar">
+
     <!-- Logo Section -->
-    <a href="#" class="pure-menu-heading pure-menu-link">Logo</a>
+    <a href="#" class="logo">Logo</a>
 
     <!-- Navigation Links -->
-    <ul class="pure-menu-list">
-      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
-      <li class="pure-menu-item"><a href="#" class="pure-menu-link">About Us</a></li>
-      <li class="pure-menu-item"><a href="#" class="pure-menu-link">FAQ</a></li>
-      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Feedback</a></li>
+    <ul class="navbar-list">
+      <li class="navbaritem"><a href="#" class="navbar-link">Home</a></li>
+      <li class="navbar-item"><a href="#" class="navbar-link">About Us</a></li>
+      <li class="navbar-item"><a href="#" class="navbar-link">FAQ</a></li>
+      <li class="navbar-item"><a href="#" class="navbar-link">Feedback</a></li>
     </ul>
 
     <!-- Search Form -->
-    <form class="pure-form">
+    <form class="navbar-form">
       <input type="text" placeholder="Search here..." />
     </form>
 
@@ -45,22 +46,22 @@ nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
-.pure-menu-heading {
+.nav-heading {
   color: white;
   font-size: 1.5rem; /* Adjust logo size */
   font-weight: bold;
 }
 
-.pure-menu-link {
+.navbar-link {
   color: white;
   text-decoration: none; /* Remove underline from links */
 }
 
-.pure-menu-link:hover {
+.navbar-link:hover {
   color: #ffcc00; /* Highlight color on hover */
 }
 
-.pure-form input[type="text"] {
+.navbar-form input[type="text"] {
   border-radius: 4px;
   padding: 5px;
   margin-left: 20px; /* Space between search input and menu items */

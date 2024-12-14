@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <Header />
+    <Header/>
     <main>
     <Hero />
     <RegisterSection />
     <FeedbackSection />
     <NewsEvents />
   </main>
-    <Footer />
+    <Footer/>
   </div>
 </template>
 

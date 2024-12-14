@@ -33,8 +33,9 @@
             </div>
           </div>
         </div>
-        <!-- Text Placeholder -->
-        <div class="text-placeholder">
+        
+        <!-- News Updates -->
+        <div class="news-updates">
           <h3>Exciting News and Events at Railway XYZ</h3>
           <p>Stay up to date with the latest news and events at Railway XYZ. Discover important updates, announcements, and upcoming happenings that matter to you.</p>
         </div>
@@ -66,7 +67,7 @@
 }
 
 .carousel,
-.text-placeholder {
+.news-updates {
   flex: 1; /* Each will take 50% of the width */
   width: 50%;
 }
@@ -141,17 +142,17 @@ input#slide3:checked ~ .dots label:nth-child(3) {
   background-color: #0073e6;
 }
 
-.text-placeholder {
+.news-updates {
   text-align: left;
   padding: 10px;
 }
 
-.text-placeholder h3 {
+.news-updates h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-.text-placeholder p {
+.news-updates p {
   font-size: 1rem;
 }
 </style>

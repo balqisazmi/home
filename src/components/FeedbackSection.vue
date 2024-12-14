@@ -1,16 +1,17 @@
 <template>
-  <section class="feedback">
-    <h2>Share Your Feedback</h2>
-    <div class="form">
-      <select>
-        <option>Feedback</option>
-        <option>Railway Services</option>
-        <option>Station Facilities</option>
-      </select>
-      <textarea placeholder="Enter your feedback here"></textarea>
-      <button class="btn btn-primary">Submit</button>
+  <div class="feedback-component">
+    <!-- Title, Description, Link -->
+    <div class="left-side">
+      <h2>Give Us Your Feedback!</h2>
+      <p>We value your feedback to improve our services. Please let us know how we can serve you better.</p>
+      <router-link to="/feedback" class="feedback-link">We Hear You</router-link>
     </div>
-  </section>
+    
+    <!-- Right Side: Image -->
+    <div class="right-side">
+      <img src="/images/FEEDBACK.png" alt="Feedback Illustration" />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -19,37 +20,43 @@ export default {
 };
 </script>
 
-<style>
-.feedback {
+<style scoped>
+.feedback-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.left-side {
+  flex: 1;
+  max-width: 50%;
+}
+
+.right-side {
+  flex: 1;
+  max-width: 50%;
   text-align: center;
-  background-color: #f1f1f1;
 }
-.feedback h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-.feedback .form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-.feedback select,
-.feedback textarea {
+
+.right-side img {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  max-width: 400px;
+  height: auto;
 }
-.feedback textarea {
-  height: 100px;
-}
-.feedback .btn {
-  padding: 10px 20px;
-  background-color: #007bff;
+
+.feedback-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #0073e6;
   color: white;
-  border: none;
+  text-decoration: none;
   border-radius: 4px;
-  cursor: pointer;
+}
+
+.feedback-link:hover {
+  background-color: #005bb5;
 }
 </style>
